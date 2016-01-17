@@ -12,7 +12,6 @@ ADMIN_USER=$1
 echo '**** Bootstrap away! ****'
 
 update_webroot(){
-    whoami
     cd /srv/www/simplyfound.com/pri/venv/webroot
     source /srv/www/simplyfound.com/pri/venv/bin/activate
     git pull
