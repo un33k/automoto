@@ -2,7 +2,7 @@
 # Running as root
 ##############################################
 ADMIN_USER=$1
-echo '**** Running as $ADMIN_USER ****'
+echo '**** Bootstrap away! ****'
 
 update_webroot(){
     cd /srv/www/simplyfound.com/pri/venv/webroot
