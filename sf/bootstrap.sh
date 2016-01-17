@@ -1,7 +1,7 @@
 #!/bin/bash
 # Running as root
 ##############################################
-ADMIN_USER=vman
+ADMIN_USER=$1
 
 update_webroot(){
     cd /srv/www/simplyfound.com/pri/venv/webroot
