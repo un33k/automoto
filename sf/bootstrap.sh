@@ -1,10 +1,18 @@
 #!/bin/bash
 # Running as root
 ##############################################
+if [ -z "$*" ]; then
+    echo "Missing username"
+    echo "Example: command <username>"
+    echo ""
+    exit 0
+fi
+
 ADMIN_USER=$1
 echo '**** Bootstrap away! ****'
 
 update_webroot(){
+    whoami
     cd /srv/www/simplyfound.com/pri/venv/webroot
     source /srv/www/simplyfound.com/pri/venv/bin/activate
     git pull
