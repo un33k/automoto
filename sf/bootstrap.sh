@@ -29,10 +29,10 @@ unattended-upgrade
 
 # Update source code and seekrets
 echo '**** Update Webroot simplyfound ****'
-su $ADMIN_USER -c "bash -c update_seekrets"
+su $ADMIN_USER -c "bash -c update_webroot"
 
 echo '**** Update seekrets simplyfound ****'
-su $ADMIN_USER -c "bash -c update_webroot"
+su $ADMIN_USER -c "bash -c update_seekrets"
 
 # Restart webserver
 echo '**** Restart web server ****'
